@@ -1,0 +1,164 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LiadBoard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x02 J1
+U 1 1 5AF45ACF
+P 1050 1150
+F 0 "J1" H 1050 1250 50  0000 C CNN
+F 1 "Conn_01x02" H 1050 950 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 1050 1150 50  0001 C CNN
+F 3 "" H 1050 1150 50  0001 C CNN
+	1    1050 1150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C1
+U 1 1 5AF45B59
+P 2100 1200
+F 0 "C1" H 2110 1270 50  0000 L CNN
+F 1 "10u" H 2110 1120 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2100 1200 50  0001 C CNN
+F 3 "" H 2100 1200 50  0001 C CNN
+	1    2100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5AF45BD8
+P 1550 1300
+F 0 "#PWR01" H 1550 1050 50  0001 C CNN
+F 1 "GND" H 1550 1150 50  0000 C CNN
+F 2 "" H 1550 1300 50  0001 C CNN
+F 3 "" H 1550 1300 50  0001 C CNN
+	1    1550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR02
+U 1 1 5AF45BF0
+P 1550 1100
+F 0 "#PWR02" H 1550 950 50  0001 C CNN
+F 1 "+12V" H 1550 1240 50  0000 C CNN
+F 2 "" H 1550 1100 50  0001 C CNN
+F 3 "" H 1550 1100 50  0001 C CNN
+	1    1550 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1300 1550 1250
+Wire Wire Line
+	1550 1250 1250 1250
+Wire Wire Line
+	1250 1150 1550 1150
+Wire Wire Line
+	1550 1150 1550 1100
+$Comp
+L +12V #PWR03
+U 1 1 5AF45C83
+P 2100 1050
+F 0 "#PWR03" H 2100 900 50  0001 C CNN
+F 1 "+12V" H 2100 1190 50  0000 C CNN
+F 2 "" H 2100 1050 50  0001 C CNN
+F 3 "" H 2100 1050 50  0001 C CNN
+	1    2100 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5AF45C94
+P 2100 1350
+F 0 "#PWR04" H 2100 1100 50  0001 C CNN
+F 1 "GND" H 2100 1200 50  0000 C CNN
+F 2 "" H 2100 1350 50  0001 C CNN
+F 3 "" H 2100 1350 50  0001 C CNN
+	1    2100 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1350 2100 1300
+Wire Wire Line
+	2100 1100 2100 1050
+$Comp
+L LED_Small D1
+U 1 1 5AF45D84
+P 2600 1200
+F 0 "D1" V 2700 1250 50  0000 L CNN
+F 1 "UV" V 2550 1050 50  0000 L CNN
+F 2 "UVLed:890-3954" V 2600 1200 50  0001 C CNN
+F 3 "" V 2600 1200 50  0001 C CNN
+	1    2600 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L +12V #PWR05
+U 1 1 5AF45E28
+P 2600 1050
+F 0 "#PWR05" H 2600 900 50  0001 C CNN
+F 1 "+12V" H 2600 1190 50  0000 C CNN
+F 2 "" H 2600 1050 50  0001 C CNN
+F 3 "" H 2600 1050 50  0001 C CNN
+	1    2600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5AF45E3C
+P 2600 1350
+F 0 "#PWR06" H 2600 1100 50  0001 C CNN
+F 1 "GND" H 2600 1200 50  0000 C CNN
+F 2 "" H 2600 1350 50  0001 C CNN
+F 3 "" H 2600 1350 50  0001 C CNN
+	1    2600 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1350 2600 1300
+Wire Wire Line
+	2600 1100 2600 1050
+$EndSCHEMATC
